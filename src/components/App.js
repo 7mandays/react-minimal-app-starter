@@ -1,7 +1,7 @@
 import React from 'react'
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import AddMessage from '../containers/AddMessage'
-import MessageList from '../containers/MessageList'
+import MessageListContainer from '../containers/MessageListContainer'
 import MessageDetail from '../containers/MessageDetail'
 
 const Page = ({children}) => (
@@ -17,7 +17,7 @@ const Page = ({children}) => (
 const Messages = () => (
   <div>
     <AddMessage />
-    <MessageList />
+    <MessageListContainer />
   </div>
 )
 

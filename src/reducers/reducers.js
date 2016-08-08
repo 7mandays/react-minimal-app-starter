@@ -5,11 +5,11 @@ function messages(state = [], action) {
     case 'ADD_MESSAGE':
       return [
         ...state,
-        action.payload
+        action.message
       ]
     case 'DELETE_MESSAGE':
-      return state.filter((v) => {
-        return v.id != action.payload
+      return state.filter((m) => {
+        return m.id != action.id
       });
     default:
       return state;
@@ -19,7 +19,7 @@ function messages(state = [], action) {
 function filter(state = 3, action) {
   switch(action.type) {
     case 'CHANGE_FILTER':
-      return action.payload
+      return action.numberOfRecords
     default:
       return state;
   }
