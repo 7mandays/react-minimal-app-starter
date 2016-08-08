@@ -4,7 +4,7 @@ import { deleteMessage, fetchMessages } from '../actions/actions'
 import MessageList from '../components/MessageList'
 
 const getFilteredMessages = (messages, filter) => {
-  return messages.slice(0, filter);
+  return messages.slice(0, filter)
 }
 
 const mapStateToProps = (state) => {
@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch) => {
 
 class MessageListC extends React.Component {
   constructor() {
-    super();
+    super()
   }
 
   componentDidMount() {

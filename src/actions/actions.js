@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 
-const uid = () => Math.random().toString(34).slice(2);
+const uid = () => Math.random().toString(34).slice(2)
 
 export function addMessage(text) {
   return {
@@ -9,7 +9,7 @@ export function addMessage(text) {
       id: uid(),
       text
     }
-  };
+  }
 }
 
 export function deleteMessage(id = -1) {

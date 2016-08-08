@@ -1,5 +1,5 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk  from 'redux-thunk'
@@ -10,7 +10,7 @@ let store = createStore(
   reducer,
   applyMiddleware(thunk)
   //  && window.devToolsExtension && window.devToolsExtension()
-);
+)
 
 render(
   <div>
@@ -19,4 +19,4 @@ render(
     </Provider>
   </div>,
   document.getElementById('root')
-);
+)

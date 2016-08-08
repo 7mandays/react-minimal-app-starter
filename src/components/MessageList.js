@@ -1,5 +1,5 @@
-import React from 'react';
-import Message from './Message';
+import React from 'react'
+import Message from './Message'
 
 const MessageList = ({messages, onMessageClick}) => {
     return (
@@ -10,7 +10,7 @@ const MessageList = ({messages, onMessageClick}) => {
           ))}
         </ul>
       </div>
-    );
+    )
 }
 
 MessageList.propTypes = {
@@ -18,4 +18,4 @@ MessageList.propTypes = {
   onMessageClick: React.PropTypes.func.isRequired
 }
 
-export default MessageList;
+export default MessageList

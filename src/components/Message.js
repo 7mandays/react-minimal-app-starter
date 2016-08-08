@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router'
 import MessageDetailLink from './MessageDetailLink'
 
@@ -9,7 +9,7 @@ const Message = ({id, text, onClick}) => {
         <button onClick={onClick}>Delete</button>
         <MessageDetailLink id={id}>message detail</MessageDetailLink>
       </li>
-    );
+    )
 }
 
 Message.propTypes = {
@@ -18,4 +18,4 @@ Message.propTypes = {
   onClick: React.PropTypes.func.isRequired
 }
 
-export default Message;
+export default Message

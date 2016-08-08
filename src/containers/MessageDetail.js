@@ -3,11 +3,11 @@ import { deleteMessage } from '../actions/actions'
 import Message from '../components/Message'
 
 const getMessage = (messages, id) => {
-  return messages.filter((m) => {return m.id == id})[0];
+  return messages.filter((m) => {return m.id == id})[0]
 }
 
 const mapStateToProps = (state, customProps) => {
-  const m = getMessage(state.messages, customProps.params.id);
+  const m = getMessage(state.messages, customProps.params.id)
   return {
     id: m.id,
     text: m.text
@@ -17,8 +17,8 @@ const mapStateToProps = (state, customProps) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onClick: (id) => {
-      dispatch(deleteMessage(id));
-      window.location = '/messages';
+      dispatch(deleteMessage(id))
+      window.location = '/messages'
     }
   }
 }
