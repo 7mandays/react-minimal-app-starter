@@ -1,14 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router'
+import MessageDetailLink from './MessageDetailLink'
 
-const Message = ({text, onClick}) => {
+const Message = ({id, text, onClick}) => {
     return (
-      <li onClick={onClick}>
+      <li>
         {text}
+        <button onClick={onClick}>Delete</button>
+        <MessageDetailLink id={id}>message detail</MessageDetailLink>
       </li>
     );
 }
 
 Message.propTypes = {
+  id: React.PropTypes.string.isRequired,
   text: React.PropTypes.string.isRequired,
   onClick: React.PropTypes.func.isRequired
 }
