@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router'
 import MessageDetailLink from './MessageDetailLink'
 
 const Message = ({id, text, onClick}) => {

@@ -28,7 +28,6 @@ class MessageListC extends React.Component {
   }
 
   componentDidMount() {
-    // const { dispatch } = this.props
     this.props.dispatch(fetchMessages())
   }
 

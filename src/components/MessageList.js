@@ -1,8 +1,7 @@
 import React from 'react'
 import Message from './Message'
 
-const MessageList = ({messages, onMessageClick}) => {
-    return (
+const MessageList = ({messages, onMessageClick}) => (
       <div>
         <ul>
           {messages.map(m => (
@@ -11,7 +10,6 @@ const MessageList = ({messages, onMessageClick}) => {
         </ul>
       </div>
     )
-}
 
 MessageList.propTypes = {
   messages: React.PropTypes.array.isRequired,
